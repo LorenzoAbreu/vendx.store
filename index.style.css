@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --bg: #0F0D0F;
+  --bg-light: #222222;
+  --purple: #A30D8E;
+  --purple-dark: #790477;
+}
+
+::selection {
+  color: white;
+  background: var(--purple-dark);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter';
+}
+
+body {
+  background-color: var(--bg);
+}
+
+header {
+  background-color: var(--bg-light);
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.link {
+  margin-inline: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 15pt;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.login a {
+  background-color: var(--purple);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.home-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.home-body h1 {
+  font-size: 55pt;
+}
+
+.logo img {
+  width: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 700px) {
+  header {
+    height: 120px;
+  }
+}

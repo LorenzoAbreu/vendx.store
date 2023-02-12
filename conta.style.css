@@ -1,0 +1,87 @@
+.account-data {
+  background-color: var(--bg-light);
+  width: 80%;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.account-user-section {
+  text-align: center;
+}
+
+.account-username {
+  color: rgba(255,255,255,1);
+  font-size: 20pt;
+}
+
+.account-email {
+  color: rgba(255,255,255,.5);
+  font-size: 15pt;
+}
+
+.account-email b {
+  filter: blur(5px);
+  transition: .5s;
+}
+
+.account-email b:hover {
+  filter: none;
+}
+
+.account-data-section {
+  width: 100%; 
+  margin-block: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logout {
+  display: flex;
+}
+
+.account-text {
+  color: rgba(255,255,255,.5);
+  font-size: 15pt;
+}
+
+
+.sair {
+  background-color: rgb(188, 0, 0);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}  
+
+.account-admin-section {
+  width: 100%; 
+  margin-block: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.account-admin-title {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.account-admin-button {
+  background-color: var(--purple);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  margin-block: 5px;
+}
