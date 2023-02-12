@@ -11,15 +11,16 @@
   <?php include('./components/header.php') ?>
 
   <?php
-    if ($_POST['productsname'] && $_GET['novo_produto']=='create') {
+    if ($_GET['novo_produto']=='create') {
         $productname = $_POST['productname'];
         $image = $_POST['image'];
         $price = $_POST['price'];
         $description = $_POST['description'];
         $tipo = $_POST['tipo'];
 
+        $query_product = "INSERT INTO products (id, title, description, price, image, tipo) VALUES (" . rand(0,9999) . rand(0,9999) . ", '$productname', '$description', '$price', '$image', '$tipo')";
 
-      
+        echo $tipo;
 
         $result_product = mysqli_query($con, $query_product);
         
