@@ -56,7 +56,7 @@
                         <p>" . $row['description'] . "</p>
                       </div>
                       <div class='back_bottom'>
-                      <button class='produto-comprar'>Comprar</button>
+                      <a class='produto-comprar' href='https://discord.gg/hDzTzmvJ6h'>Comprar</a>
                       </div>
                     </div>
                   </div>";
